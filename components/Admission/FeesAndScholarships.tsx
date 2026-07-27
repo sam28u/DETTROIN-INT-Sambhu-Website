@@ -31,9 +31,9 @@ const FeesAndScholarships = () => {
     <section className="w-full bg-[#051108] py-20 px-6 lg:px-12 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-16 items-start">
         
-        {/* --- Left Column: Fee Structure --- */}
+        
         <div className="w-full">
-          {/* Section Header */}
+          
           <div className="flex items-center gap-4 mb-8">
             <div className="w-1.5 h-8 bg-[#cbf5d7] rounded-full"></div>
             <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
@@ -41,7 +41,7 @@ const FeesAndScholarships = () => {
             </h2>
           </div>
 
-          {/* Table Container */}
+          
           <div className="bg-[#0a1a10] border border-[#17301e] rounded-2xl overflow-hidden shadow-2xl">
             <div className="overflow-x-auto">
               <table className="w-full text-left border-collapse">
@@ -78,15 +78,15 @@ const FeesAndScholarships = () => {
             </div>
           </div>
           
-          {/* Footer Note */}
+          
           <p className="text-[#a5b0a8] text-xs italic mt-4 px-2">
             * All fees are subject to annual review. Lab fees may apply for STEM subjects.
           </p>
         </div>
 
-        {/* --- Right Column: Scholarships --- */}
+        
         <div className="w-full">
-          {/* Section Header */}
+          
           <div className="flex items-center gap-4 mb-8">
             <div className="w-1.5 h-8 bg-[#64b5f6] rounded-full"></div>
             <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
@@ -94,7 +94,7 @@ const FeesAndScholarships = () => {
             </h2>
           </div>
 
-          {/* Scholarships Grid */}
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {scholarships.map((scholarship, index) => (
               <div 

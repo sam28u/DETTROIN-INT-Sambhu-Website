@@ -61,29 +61,29 @@ const VisitOurCampus = () => {
   return (
     <section className="w-full bg-[#0a0a0a] py-20 px-6 lg:px-12 font-sans flex justify-center">
       
-      {/* Main Card Container */}
+      
       <div className="w-full max-w-6xl flex flex-col md:flex-row bg-[#1e2022] rounded-[2rem] overflow-hidden shadow-2xl border border-[#2a2c30]">
         
-        {/* --- Left Column: Digital Map Image --- */}
+        
         <div className="w-full md:w-1/2 relative min-h-[300px] md:min-h-[400px] bg-[#0a0a0a]">
-          {/* High-quality dark architectural/satellite top-down map view */}
+          
           <img 
             src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1200&auto=format&fit=crop" 
             alt="Digital Campus Map" 
             className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale mix-blend-lighten"
           />
-          {/* Overlay to ensure it stays dark and blends seamlessly */}
+          
           <div className="absolute inset-0 bg-gradient-to-r from-transparent to-[#1e2022]/80 md:to-[#1e2022]"></div>
         </div>
 
-        {/* --- Right Column: Contact Details --- */}
+        
         <div className="w-full md:w-1/2 p-8 md:p-12 lg:p-16 flex flex-col justify-center relative z-10">
           
           <h2 className="text-3xl lg:text-4xl font-bold text-[#cbf5d7] mb-8 tracking-tight">
             Visit Our Campus
           </h2>
           
-          {/* Contact List */}
+          
           <div className="flex flex-col gap-6 mb-10">
             {contactInfo.map((item, index) => (
               <div key={index} className="flex items-start gap-4">
@@ -97,7 +97,7 @@ const VisitOurCampus = () => {
             ))}
           </div>
 
-          {/* Social Media Links */}
+          
           <div className="flex items-center gap-4">
             {socialLinks.map((social, index) => (
               <a 

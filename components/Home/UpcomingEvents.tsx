@@ -11,14 +11,14 @@ const UpcomingEvents = () => {
       title: "Annual Sports Meet",
       description: "A celebration of athleticism, teamwork, and spirit across all grades.",
       location: "Main Campus Stadium",
-      theme: "green", // #35E58D
+      theme: "green", 
     },
     {
       date: "12 NOV",
       title: "Science Fair 2024",
       description: "Showcasing innovative student projects in AI, Robotics, and Green Energy.",
       location: "Innovation Lab",
-      theme: "blue", // #4ac1e0
+      theme: "blue", 
     },
     {
       date: "05 DEC",
@@ -40,13 +40,13 @@ const UpcomingEvents = () => {
     <section className="w-full bg-transparent py-16 px-6 lg:px-12 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Section Header */}
+        
         <div className="flex items-center gap-6 mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight whitespace-nowrap">
             Upcoming Events
           </h2>
           
-          {/* Fading Line */}
+          
           <div className="flex-grow h-[1px] bg-gradient-to-r from-[#2a2a35] to-transparent hidden sm:block"></div>
           
           <Link 
@@ -58,7 +58,7 @@ const UpcomingEvents = () => {
           </Link>
         </div>
 
-        {/* Events Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
           {events.map((event, index) => {
             const isGreen = event.theme === "green";
@@ -72,22 +72,22 @@ const UpcomingEvents = () => {
                 key={index}
                 className={`bg-[#15151c]/80 backdrop-blur-md border rounded-2xl p-6 sm:p-8 flex flex-col transition-all duration-300 group cursor-pointer ${borderClass}`}
               >
-                {/* Date */}
+                
                 <h3 className={`text-xl sm:text-2xl font-bold mb-3 tracking-wide ${colorClass}`}>
                   {event.date}
                 </h3>
                 
-                {/* Title */}
+                
                 <h4 className="text-white text-lg font-bold mb-3 group-hover:text-gray-200 transition-colors">
                   {event.title}
                 </h4>
                 
-                {/* Description */}
+                
                 <p className="text-gray-400 text-xs sm:text-sm leading-relaxed mb-6 flex-grow">
                   {event.description}
                 </p>
                 
-                {/* Location */}
+                
                 <div className="flex items-center gap-2 text-gray-500 text-xs mt-auto pt-4 border-t border-[#2a2a35]/50 group-hover:text-gray-400 transition-colors">
                   <MapPin size={14} />
                   <span>{event.location}</span>

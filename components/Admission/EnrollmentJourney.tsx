@@ -35,7 +35,7 @@ const EnrollmentJourney = () => {
     <section className="w-full bg-[#0a0a0a] py-24 px-6 lg:px-12 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header Section */}
+        
         <div className="text-center mb-20 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 tracking-tight">
             The Enrollment Journey
@@ -45,13 +45,13 @@ const EnrollmentJourney = () => {
           </p>
         </div>
 
-        {/* Journey Timeline */}
+        
         <div className="relative">
           
-          {/* Connecting Line (Desktop) */}
+          
           <div className="hidden md:block absolute top-[48px] left-[12%] right-[12%] h-[2px] bg-gradient-to-r from-[#0d2116] via-[#35E58D]/40 to-[#0d2116] z-0"></div>
           
-          {/* Connecting Line (Mobile) */}
+          
           <div className="md:hidden absolute top-[24px] bottom-[24px] left-[48px] w-[2px] bg-gradient-to-b from-[#0d2116] via-[#35E58D]/40 to-[#0d2116] z-0"></div>
 
           <div className="flex flex-col md:flex-row gap-12 md:gap-6 justify-between">
@@ -61,14 +61,14 @@ const EnrollmentJourney = () => {
                 className="relative z-10 flex flex-row md:flex-col items-center flex-1 gap-6 md:gap-8 group"
               >
                 
-                {/* Icon Box */}
+                
                 <div className="shrink-0 w-24 h-24 rounded-2xl bg-[#0a150f] border border-[#193322] flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:-translate-y-1 group-hover:shadow-[0_0_25px_rgba(53,229,141,0.15)]">
                   <div className="transition-transform duration-300 group-hover:scale-110">
                     {step.icon}
                   </div>
                 </div>
 
-                {/* Text Content */}
+                
                 <div className="text-left md:text-center w-full">
                   <h3 className="text-white text-base md:text-lg font-bold mb-2 md:mb-3">
                     {step.num}. {step.title}

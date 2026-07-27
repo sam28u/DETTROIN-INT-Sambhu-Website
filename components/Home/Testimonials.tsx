@@ -11,7 +11,7 @@ const Testimonials = () => {
       role: "PARENT",
       quote: "Excellence International has transformed my son's approach to learning. The blend of technology and traditional values is truly unique.",
       avatar: "https://i.pravatar.cc/150?u=sameer",
-      theme: "green", // #35E58D
+      theme: "green", 
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const Testimonials = () => {
       role: "GRADE 11 STUDENT",
       quote: "Being part of the Robotics club helped me realize my passion for AI. The teachers here don't just teach; they mentor.",
       avatar: "https://i.pravatar.cc/150?u=ayesha",
-      theme: "blue", // #4ac1e0
+      theme: "blue", 
     },
     {
       id: 3,
@@ -63,13 +63,13 @@ const Testimonials = () => {
     }
   ];
 
-  // We duplicate the array to create a seamless infinite loop
+  
   const infiniteTestimonials = [...testimonials, ...testimonials];
 
   return (
     <section className="w-full bg-transparent py-20 overflow-hidden font-sans">
       
-      {/* Inline Styles for Infinite Marquee */}
+      
       <style dangerouslySetInnerHTML={{__html: `
         @keyframes scroll {
           0% { transform: translateX(0); }
@@ -92,7 +92,7 @@ const Testimonials = () => {
         </p>
       </div>
 
-      {/* Infinite Carousel Container */}
+      
       <div className="flex overflow-hidden group">
         <div className="flex animate-scroll gap-8 w-max px-4">
           {infiniteTestimonials.map((testimonial, index) => {
@@ -106,7 +106,7 @@ const Testimonials = () => {
                 key={`${testimonial.id}-${index}`}
                 className={`relative w-[320px] sm:w-[380px] bg-[#15151c]/80 backdrop-blur-md border border-[#2a2a35] rounded-3xl p-8 pt-10 flex flex-col transition-colors duration-300 hover:${borderColor} shrink-0 mt-6`}
               >
-                {/* Floating Quote Icon */}
+                
                 <div 
                   className="absolute -top-6 left-6 w-12 h-12 rounded-full flex items-center justify-center z-10"
                   style={{ 
@@ -117,12 +117,12 @@ const Testimonials = () => {
                   <Quote size={20} className="text-[#111] fill-current" />
                 </div>
 
-                {/* Quote Text */}
+                
                 <p className="text-gray-300 italic text-sm leading-relaxed flex-grow mb-8 mt-2">
                   "{testimonial.quote}"
                 </p>
 
-                {/* Author Info */}
+                
                 <div className="flex items-center gap-4">
                   <img 
                     src={testimonial.avatar} 

@@ -8,7 +8,7 @@ const EnrollmentCTA = () => {
   return (
     <section className="relative w-full bg-transparent py-20 px-6 lg:px-12 font-sans overflow-hidden">
       
-      {/* --- Ambient Glowing Background --- */}
+      
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
         <div className="absolute top-[0%] left-[-10%] w-[40vw] h-[40vw] max-w-[600px] max-h-[600px] bg-[#35E58D] rounded-full mix-blend-screen filter blur-[120px] sm:blur-[150px] opacity-10"></div>
         <div className="absolute bottom-[-10%] right-[-5%] w-[45vw] h-[45vw] max-w-[500px] max-h-[500px] bg-[#4ac1e0] rounded-full mix-blend-screen filter blur-[120px] sm:blur-[150px] opacity-10"></div>
@@ -16,7 +16,7 @@ const EnrollmentCTA = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
-        {/* --- Left Column: Text Content --- */}
+        
         <div className="flex flex-col items-start max-w-xl">
           
           <div className="inline-block border border-[#1e3b2b] bg-[#0d2116] rounded-full px-4 py-1.5 mb-6">
@@ -52,29 +52,29 @@ const EnrollmentCTA = () => {
 
         </div>
 
-        {/* --- Right Column: Floating Image & Overlay Card --- */}
-        {/* We use motion.div here for the floating animation */}
+        
+        
         <motion.div 
           className="relative w-full h-[450px] lg:h-[550px] rounded-[2rem] overflow-hidden group shadow-2xl"
-          animate={{ y: [0, -20, 0] }} // Moves up 20px, then back down to 0
+          animate={{ y: [0, -20, 0] }} 
           transition={{ 
-            duration: 5, // Takes 5 seconds for one complete up/down cycle
-            repeat: Infinity, // Loops forever
-            ease: "easeInOut" // Smooth acceleration and deceleration
+            duration: 5, 
+            repeat: Infinity, 
+            ease: "easeInOut" 
           }}
         >
           
-          {/* Main Image */}
+          
           <img 
             src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" 
             alt="Students at Excellence International" 
             className="w-full hover:scale-110 duration-750 ease-out h-full object-cover rounded-[2rem]"
           />
 
-          {/* Inner Shadow / Vignette for better text contrast */}
+          
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none rounded-[2rem]"></div>
 
-          {/* Glassmorphic Overlay Card */}
+          
           <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8 bg-[#15151c]/60 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl">
             <h4 className="text-[#cbf5d7] font-bold text-lg mb-2">
               2024–25 Intake

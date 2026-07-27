@@ -6,7 +6,7 @@ import { ChevronDown, Phone, Mail } from "lucide-react";
 import Link from "next/link";
 
 const AdmissionsFAQ = () => {
-  // State to track the currently open FAQ. Null means all are closed.
+  
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs = [
@@ -36,7 +36,7 @@ const AdmissionsFAQ = () => {
     <section className="w-full bg-[#0a0a0a] py-20 px-6 lg:px-12 font-sans overflow-hidden">
       <div className="max-w-4xl mx-auto flex flex-col gap-24">
         
-        {/* --- Top Section: FAQ --- */}
+        
         <div>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
@@ -96,10 +96,10 @@ const AdmissionsFAQ = () => {
           </div>
         </div>
 
-        {/* --- Bottom Section: Personal Guidance CTA --- */}
+        
         <div className="relative w-full bg-gradient-to-b from-[#1a1a24] to-[#12121a] border border-[#2a2a35] rounded-[2rem] p-10 md:p-16 flex flex-col items-center text-center shadow-2xl overflow-hidden">
           
-          {/* Green background glow added here */}
+          
           <div className="absolute top-[-50%] left-[50%] -translate-x-1/2 w-[60%] h-[100%] bg-[#35E58D]/15 blur-[120px] rounded-full pointer-events-none"></div>
 
           <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
@@ -111,7 +111,7 @@ const AdmissionsFAQ = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              {/* Phone Button */}
+              
               <a 
                 href="tel:9972550000"
                 className="w-full sm:w-auto flex items-center justify-center gap-3 bg-[#2a2a35] hover:bg-[#353545] text-white px-8 py-3.5 rounded-xl font-bold text-sm transition-all duration-300"

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 const FAQ = () => {
-  // State to track the currently open FAQ. Null means all are closed.
+  
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs = [
@@ -35,7 +35,7 @@ const FAQ = () => {
     <section className="w-full bg-transparent py-20 px-6 lg:px-12 font-sans">
       <div className="max-w-4xl mx-auto">
         
-        {/* Header Section */}
+        
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 tracking-tight">
             Frequently Asked Questions
@@ -45,7 +45,7 @@ const FAQ = () => {
           </p>
         </div>
 
-        {/* FAQ Accordion List */}
+        
         <div className="flex flex-col gap-4">
           {faqs.map((faq, index) => {
             const isOpen = openIndex === index;
@@ -57,7 +57,7 @@ const FAQ = () => {
                   isOpen ? "border-[#35E58D]/30" : "border-[#2a2a35] hover:border-gray-500"
                 }`}
               >
-                {/* Question / Toggle Button */}
+                
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full flex items-center justify-between p-5 md:p-6 text-left focus:outline-none"
@@ -75,7 +75,7 @@ const FAQ = () => {
                   </motion.div>
                 </button>
 
-                {/* Answer Content with Animation */}
+                
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div

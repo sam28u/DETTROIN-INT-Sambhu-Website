@@ -62,7 +62,7 @@ const AcademicStages = () => {
     <section className="w-full bg-[#0a0a0a] py-16 px-6 lg:px-12 font-sans">
       <div className="max-w-7xl mx-auto">
         
-        {/* Section Header */}
+        
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
             Academic Stages
@@ -72,14 +72,14 @@ const AcademicStages = () => {
           </p>
         </div>
 
-        {/* Cards Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           {stages.map((stage, index) => (
             <div 
               key={index} 
               className="bg-[#15151c] border border-[#2a2a35] rounded-3xl overflow-hidden flex flex-col h-full hover:border-[#35E58D]/50 transition-colors duration-300 shadow-lg"
             >
-              {/* Image Container */}
+              
               <div className="relative h-48 w-full overflow-hidden">
                 <img 
                   src={stage.image} 
@@ -88,7 +88,7 @@ const AcademicStages = () => {
                 />
               </div>
 
-              {/* Card Content */}
+              
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-[#35E58D] text-xl font-bold mb-4">
                   {stage.title}

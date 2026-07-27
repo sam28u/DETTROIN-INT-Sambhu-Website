@@ -9,10 +9,10 @@ const Footer = () => {
     <footer className="w-full bg-[#0a0a0a] border-t border-[#2a2a35] pt-16 pb-8 px-6 lg:px-12 font-sans mt-24">
       <div className="max-w-7xl mx-auto">
         
-        {/* Top Section: Grid Links */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           
-          {/* Column 1: Brand & Description & Socials */}
+          
           <div className="flex flex-col max-w-sm">
             <Link href="/" className="mb-4">
               <h2 className="text-[#35E58D] text-3xl font-bold leading-tight tracking-tight">
@@ -23,7 +23,7 @@ const Footer = () => {
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Empowering future leaders through innovation, precision, and global vision. Dedicated to holistic academic excellence.
             </p>
-            {/* Social Icons */}
+            
             <div className="flex items-center gap-3">
               <a href="#" className="w-10 h-10 rounded-xl bg-[#161616] border border-[#2a2a35] flex items-center justify-center text-[#35E58D] hover:bg-[#35E58D] hover:text-[#0a0a0a] transition-all">
                 <Globe size={18} />
@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Quick Links & Academics */}
+          
           <div className="flex flex-col">
             <h3 className="text-white text-sm font-bold tracking-widest uppercase mb-6">
               Explore
@@ -71,7 +71,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Legal & Policies */}
+          
           <div className="flex flex-col">
             <h3 className="text-white text-sm font-bold tracking-widest uppercase mb-6">
               Legal & Policy
@@ -105,7 +105,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Contact Us & Newsletter */}
+          
           <div className="flex flex-col">
             <h3 className="text-white text-sm font-bold tracking-widest uppercase mb-6">
               Contact Us
@@ -125,7 +125,7 @@ const Footer = () => {
               </li>
             </ul>
 
-            {/* Newsletter Subscription input */}
+            
             <form onSubmit={(e) => e.preventDefault()} className="relative">
               <input 
                 type="email" 
@@ -145,7 +145,7 @@ const Footer = () => {
 
         </div>
 
-        {/* Bottom Section: Copyright */}
+        
         <div className="border-t border-[#2a2a35] pt-8 flex flex-col sm:flex-row items-center justify-between text-center gap-4">
           <p className="text-gray-500 text-xs md:text-sm">
             © 2026 Excellence International School. Empowering Future Leaders.

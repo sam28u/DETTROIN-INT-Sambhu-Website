@@ -35,12 +35,12 @@ const AcademicFramework = () => {
     <section className="w-full bg-transparent py-16 px-6 lg:px-12 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header */}
+        
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12 tracking-tight">
           Academic Framework
         </h2>
 
-        {/* Cards Grid */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {frameworks.map((category, index) => (
             <div 

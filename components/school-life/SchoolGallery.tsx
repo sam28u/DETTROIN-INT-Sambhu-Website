@@ -80,7 +80,7 @@ const Gallery = () => {
 
   return (
     <section className="px-6 max-w-7xl mx-auto mb-16">
-      {/* Category Filters */}
+      
       <div className="flex flex-wrap justify-center gap-4 mb-12">
         {filters.map(filter => (
           <button
@@ -97,7 +97,7 @@ const Gallery = () => {
         ))}
       </div>
 
-      {/* Masonry Grid */}
+      
       <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[200px] gap-6">
         {filteredItems.map((item) => (
           <div 
@@ -119,7 +119,7 @@ const Gallery = () => {
               </h3>
             </div>
 
-            {/* Hover Glow Border */}
+            
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#00e38a]/40 rounded-xl pointer-events-none transition-colors"></div>
           </div>
         ))}
@@ -192,7 +192,7 @@ const Stats = () => (
 );
 
 
-// --- Main Page Assembly ---
+
 
 const SchoolGallery = () => {
   return (

@@ -11,7 +11,7 @@ import {
   Search 
 } from "lucide-react";
 
-// --- Data ---
+
 
 const newsPosts = [
   {
@@ -75,13 +75,13 @@ const trendingPosts = [
 
 const categories = ["Innovation", "Athletics", "Campus Life", "Global Outreach", "Digital Arts", "STEM"];
 
-// --- Sub-components ---
+
 
 const FeaturedNews = () => (
   <section className="mb-16">
     <div className="flex flex-col lg:flex-row bg-[#15221b] rounded-[2rem] overflow-hidden border border-[#1f3326] shadow-2xl group">
       
-      {/* Left Column: Image */}
+      
       <div className="w-full lg:w-[55%] relative h-[350px] lg:h-[550px] overflow-hidden bg-[#0a0a0a]">
         <img 
           src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop" 
@@ -91,7 +91,7 @@ const FeaturedNews = () => (
         <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#15221b] via-[#15221b]/40 to-transparent pointer-events-none"></div>
       </div>
 
-      {/* Right Column: Content */}
+      
       <div className="w-full lg:w-[45%] p-8 md:p-12 lg:p-16 flex flex-col justify-center relative z-10 lg:-ml-12">
         <div className="flex items-center gap-4 mb-6">
           <span className="bg-[#2a4536] text-[#35E58D] text-xs font-bold px-4 py-1.5 rounded-full tracking-widest uppercase border border-[#3b5e4a]/50">
@@ -122,7 +122,7 @@ const FeaturedNews = () => (
 const LatestUpdates = () => (
   <div className="lg:col-span-8 flex flex-col gap-8">
     
-    {/* Section Header */}
+    
     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end border-b border-[#222222] pb-4 gap-4">
       <h2 className="text-3xl font-bold text-white tracking-tight">
         Latest <span className="text-[#35E58D]">Updates</span>
@@ -137,11 +137,11 @@ const LatestUpdates = () => (
       </div>
     </div>
 
-    {/* Grid of Posts */}
+    
     <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
       {newsPosts.map((post) => (
         <article key={post.id} className="bg-[#161616] border border-[#222222] rounded-2xl overflow-hidden group hover:border-[#333333] hover:-translate-y-1 hover:shadow-2xl transition-all duration-300">
-          {/* Image Container */}
+          
           <div className="h-56 overflow-hidden relative">
             <a href="/article" className="block w-full h-full">
               <img 
@@ -150,7 +150,7 @@ const LatestUpdates = () => (
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
             </a>
-            {/* Category Badge */}
+            
             <div className="absolute top-4 left-4 bg-[#0a0a0a]/80 backdrop-blur-md px-3 py-1.5 rounded-lg border border-[#222222]">
               <span className={`${post.categoryColor} text-[10px] font-bold uppercase tracking-widest`}>
                 {post.category}
@@ -158,7 +158,7 @@ const LatestUpdates = () => (
             </div>
           </div>
           
-          {/* Content */}
+          
           <div className="p-6 md:p-8">
             <span className="text-gray-400 text-sm font-medium mb-3 block">{post.date}</span>
             <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#35E58D] transition-colors line-clamp-2">
@@ -175,7 +175,7 @@ const LatestUpdates = () => (
       ))}
     </div>
 
-    {/* Pagination */}
+    
     <div className="flex justify-center items-center gap-2 pt-8">
       <button className="w-12 h-12 bg-[#161616] border border-[#222222] rounded-xl flex items-center justify-center text-gray-400 hover:text-[#35E58D] hover:border-[#35E58D]/40 transition-all">
         <ChevronLeft size={24} />
@@ -200,7 +200,7 @@ const LatestUpdates = () => (
 const Sidebar = () => (
   <aside className="lg:col-span-4 flex flex-col gap-6 lg:gap-8">
     
-    {/* Search Box */}
+    
     <div className="bg-[#161616] border border-[#222222] p-6 lg:p-8 rounded-2xl">
       <h4 className="text-xl font-bold text-white mb-4">Search News</h4>
       <div className="relative">
@@ -213,9 +213,9 @@ const Sidebar = () => (
       </div>
     </div>
 
-    {/* Newsletter Widget */}
+    
     <div className="bg-[#161616] border border-[#35E58D]/30 p-6 lg:p-8 rounded-2xl relative overflow-hidden group">
-      {/* Ambient Glow */}
+      
       <div className="absolute -top-12 -right-12 w-40 h-40 bg-[#35E58D]/10 blur-[50px] rounded-full pointer-events-none transition-all duration-500 group-hover:bg-[#35E58D]/20"></div>
       
       <h4 className="text-2xl font-bold text-[#35E58D] mb-4 relative z-10">Stay Informed</h4>
@@ -236,7 +236,7 @@ const Sidebar = () => (
       </form>
     </div>
 
-    {/* Trending Now */}
+    
     <div className="bg-[#161616] border border-[#222222] p-6 lg:p-8 rounded-2xl">
       <h4 className="text-xl font-bold text-white mb-6">Trending Now</h4>
       <div className="flex flex-col gap-6">
@@ -260,7 +260,7 @@ const Sidebar = () => (
       </div>
     </div>
 
-    {/* Categories */}
+    
     <div className="bg-[#161616] border border-[#222222] p-6 lg:p-8 rounded-2xl">
       <h4 className="text-xl font-bold text-white mb-6">Categories</h4>
       <div className="flex flex-wrap gap-2.5">
@@ -279,13 +279,13 @@ const Sidebar = () => (
   </aside>
 );
 
-// --- Main Page Assembly ---
+
 
 const NewsAndEventsPage = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0a] font-sans selection:bg-[#35E58D] selection:text-[#0a0a0a]">
       
-      {/* Background ambient gradient orb */}
+      
       <div className="fixed top-[-10%] right-[-5%] w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] bg-[#35E58D] rounded-full mix-blend-screen filter blur-[150px] opacity-[0.06] pointer-events-none z-0"></div>
 
       <main className="relative z-10 pt-24 pb-24 px-6 lg:px-12 max-w-7xl mx-auto">

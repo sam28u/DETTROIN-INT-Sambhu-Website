@@ -41,12 +41,12 @@ const ValueBasedEducation = () => {
     <section className="w-full bg-transparent py-16 px-6 lg:px-12 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header */}
+        
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12 tracking-tight">
           Value-Based Education
         </h2>
 
-        {/* Values Grid */}
+        
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6">
           {values.map((value, index) => (
             <div 

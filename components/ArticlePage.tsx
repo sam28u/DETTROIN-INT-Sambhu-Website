@@ -15,27 +15,27 @@ const ArticlePage = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0a] font-sans selection:bg-[#35E58D] selection:text-[#0a0a0a] pb-24">
       
-      {/* Ambient Glow Background */}
+      
       <div className="fixed top-[-10%] right-[-5%] w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] bg-[#35E58D] rounded-full mix-blend-screen filter blur-[150px] opacity-[0.06] pointer-events-none z-0"></div>
 
-      {/* --- Hero Image Section --- */}
+      
       <div className="relative w-full h-[50vh] min-h-[400px] lg:h-[60vh] bg-[#161616]">
         <img 
           src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2000&auto=format&fit=crop" 
           alt="Students learning in a modern environment" 
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         />
-        {/* Gradient overlay to blend with the background */}
+        
         <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/50 to-transparent"></div>
       </div>
 
-      {/* --- Main Article Container --- */}
+      
       <main className="relative z-10 max-w-4xl mx-auto px-6 lg:px-8 -mt-40 lg:-mt-56">
         
-        {/* Article Card */}
+        
         <article className="bg-[#161616] border border-[#222222] rounded-[2rem] p-8 md:p-12 lg:p-16 shadow-2xl mb-12">
           
-          {/* Article Header (Meta & Title) */}
+          
           <header className="mb-12 border-b border-[#222222] pb-10">
             <div className="flex flex-wrap items-center gap-4 text-xs md:text-sm text-gray-400 font-medium mb-6">
               <span className="flex items-center gap-1.5 bg-[#0a0a0a] border border-[#333333] px-3 py-1.5 rounded-full">
@@ -57,7 +57,7 @@ const ArticlePage = () => {
             </h1>
           </header>
 
-          {/* Article Body Content */}
+          
           <div className="prose prose-invert prose-lg max-w-none text-gray-400 marker:text-[#35E58D]">
             
             <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-8">
@@ -130,9 +130,9 @@ const ArticlePage = () => {
             </p>
           </div>
           
-          {/* Article Footer (Tags & Navigation) */}
+          
           <footer className="mt-16 pt-8 border-t border-[#222222]">
-            {/* Prev/Next Post Links */}
+            
             <div className="flex flex-col sm:flex-row justify-between gap-6">
               <a href="#" className="flex-1 group flex flex-col gap-2 p-4 rounded-xl border border-transparent hover:border-[#333333] hover:bg-[#0a0a0a] transition-all">
                 <span className="flex items-center gap-2 text-xs text-gray-500 uppercase tracking-widest font-bold">
@@ -156,7 +156,7 @@ const ArticlePage = () => {
 
         </article>
 
-        {/* --- Comments Section --- */}
+        
         <section className="bg-[#161616] border border-[#222222] rounded-[2rem] p-8 md:p-12 shadow-2xl">
           <div className="flex items-center gap-3 mb-8">
             <MessageSquare className="text-[#35E58D]" size={28} />

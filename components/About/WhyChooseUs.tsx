@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
     <section className="w-full bg-[#0a0a0a] py-20 px-6 lg:px-12 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header Section */}
+        
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
             The <span className="text-[#35E58D]">Excellence</span> Experience
@@ -66,7 +66,7 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
-        {/* Features Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {features.map((feature, index) => (
             <div 

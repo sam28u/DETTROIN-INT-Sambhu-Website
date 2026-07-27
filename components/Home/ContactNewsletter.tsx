@@ -8,21 +8,21 @@ const ContactNewsletter = () => {
     <section className="w-full bg-transparent py-16 px-6 lg:px-12 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         
-        {/* --- Left Column: Map & Contact Info --- */}
+        
         <div className="relative w-full h-[350px] md:h-[400px] rounded-[2rem] overflow-hidden border border-[#2a2a35] shadow-2xl group">
-          {/* Grayscale Map Background */}
+          
           <img 
             src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000&auto=format&fit=crop&grayscale=true" 
             alt="Map Location" 
             className="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-40 transition-opacity duration-500"
           />
           
-          {/* Dark Gradient Overlay for Text Legibility */}
+          
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/70 to-transparent"></div>
 
-          {/* Contact Details (Positioned at bottom left) */}
+          
           <div className="absolute bottom-0 left-0 p-8 md:p-10 flex flex-col gap-5 z-10 w-full">
-            {/* Phone */}
+            
             <div className="flex items-center gap-4">
               <Phone size={20} className="text-[#35E58D]" />
               <span className="text-[#35E58D] text-lg md:text-xl font-bold tracking-wide">
@@ -30,7 +30,7 @@ const ContactNewsletter = () => {
               </span>
             </div>
             
-            {/* Email */}
+            
             <div className="flex items-center gap-4">
               <Mail size={20} className="text-white" />
               <span className="text-white text-sm md:text-base font-medium">
@@ -38,7 +38,7 @@ const ContactNewsletter = () => {
               </span>
             </div>
             
-            {/* Address */}
+            
             <div className="flex items-start gap-4">
               <MapPin size={20} className="text-white shrink-0 mt-1" />
               <span className="text-white text-sm md:text-base font-medium leading-relaxed">
@@ -48,7 +48,7 @@ const ContactNewsletter = () => {
           </div>
         </div>
 
-        {/* --- Right Column: Newsletter & Socials --- */}
+        
         <div className="flex flex-col justify-center max-w-lg mx-auto lg:mx-0 w-full">
           
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
@@ -59,7 +59,7 @@ const ContactNewsletter = () => {
             Stay updated with our newsletter and never miss an event or achievement.
           </p>
 
-          {/* Newsletter Form */}
+          
           <form 
             onSubmit={(e) => e.preventDefault()} 
             className="flex items-center gap-3 w-full mb-10"
@@ -78,7 +78,7 @@ const ContactNewsletter = () => {
             </button>
           </form>
 
-          {/* Social Media Icons */}
+          
           <div className="flex items-center gap-4">
             <a href="#" className="p-3 rounded-full border border-[#2a2a35] text-gray-400 hover:text-white hover:border-white transition-colors duration-300">
               <QrCode size={18} />

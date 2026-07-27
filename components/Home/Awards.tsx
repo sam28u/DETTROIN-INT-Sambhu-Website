@@ -31,8 +31,8 @@ const Awards = () => {
   return (
     <section className="relative w-full bg-[#0a0a0a] py-16 px-6 lg:px-12 font-sans overflow-hidden">
       
-      {/* --- Thematic Background --- */}
-      {/* Subtle Grid/Mesh Pattern */}
+      
+      
       <div 
         className="absolute inset-0 z-0 opacity-[0.03]" 
         style={{ 
@@ -41,13 +41,13 @@ const Awards = () => {
         }}
       ></div>
       
-      {/* Ambient Glowing Orbs */}
+      
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#4ac1e0] rounded-full mix-blend-screen filter blur-[150px] opacity-[0.12] pointer-events-none z-0 transform -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-1/4 w-[30rem] h-[30rem] bg-[#35E58D] rounded-full mix-blend-screen filter blur-[150px] opacity-[0.08] pointer-events-none z-0 transform translate-y-1/3"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto w-full">
         
-        {/* Header Section */}
+        
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">
@@ -66,15 +66,15 @@ const Awards = () => {
           </Link>
         </div>
 
-        {/* Content Grid */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
           
-          {/* Left Column: Trophy Cabinet Image */}
+          
           <div className="relative w-full h-[400px] lg:h-auto rounded-[2rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-            {/* Glowing Border Wrapper */}
+            
             <div className="absolute inset-0 rounded-[2rem] border-2 border-[#35E58D]/30 shadow-[inset_0_0_40px_rgba(53,229,141,0.15)] z-10 pointer-events-none"></div>
             
-            {/* Image Placeholder */}
+            
             <img 
               src="https://images.unsplash.com/photo-1561489422-45de3d015e3e?q=80&w=1000&auto=format&fit=crop" 
               alt="Trophy Cabinet" 
@@ -82,7 +82,7 @@ const Awards = () => {
             />
           </div>
 
-          {/* Right Column: Achievements Grid */}
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-5">
             {achievements.map((item, index) => (
               <div 

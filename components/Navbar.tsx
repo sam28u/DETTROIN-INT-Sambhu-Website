@@ -25,7 +25,7 @@ const Navbar = () => {
       
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         
-        {/* Brand / Logo Section */}
+        
         <Link 
           href="/" 
           className="flex items-center gap-3 cursor-pointer"
@@ -39,7 +39,7 @@ const Navbar = () => {
           </span>
         </Link>
 
-        {/* Desktop Navigation Links */}
+        
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => {
             const isActive = pathname === link.path;
@@ -54,7 +54,7 @@ const Navbar = () => {
               >
                 {link.name}
                 
-                {/* Animated Underline for Desktop */}
+                
                 {isActive && (
                   <motion.div
                     layoutId="active-underline"
@@ -73,7 +73,7 @@ const Navbar = () => {
           })}
         </div>
 
-        {/* Desktop CTA Button */}
+        
         <div className="hidden lg:block">
           <Link 
             href="/contact" 
@@ -83,7 +83,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Mobile Menu Toggle Button */}
+        
         <button 
           className="lg:hidden text-gray-300 hover:text-[#35E58D] transition-colors p-1"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -94,7 +94,7 @@ const Navbar = () => {
 
       </div>
 
-      {/* Mobile Navigation Dropdown */}
+      
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
@@ -123,7 +123,7 @@ const Navbar = () => {
               );
             })}
             
-            {/* Mobile CTA Button */}
+            
             <Link 
               href="/contact" 
               onClick={() => setIsMobileMenuOpen(false)}

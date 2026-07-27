@@ -3,7 +3,7 @@
 import React from "react";
 import { MapPin, Phone, Mail, Send } from "lucide-react";
 
-// --- Inline SVGs for Socials to avoid icon library conflicts ---
+
 const FacebookIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
@@ -25,7 +25,7 @@ const YoutubeIcon = () => (
   </svg>
 );
 
-// --- Sub-components ---
+
 
 const Hero = () => (
   <header className="relative pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto text-center overflow-hidden">
@@ -161,7 +161,7 @@ const LocationAndSocials = () => (
       </div>
     </div>
 
-    {/* Map Container - Replaced with high-tech, futuristic dark map image */}
+    
     <div className="w-full h-[400px] md:h-[500px] rounded-[2rem] overflow-hidden border border-[#222222] relative group">
       <img 
         src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?q=80&w=1600&auto=format&fit=crop" 
@@ -170,7 +170,7 @@ const LocationAndSocials = () => (
       />
       <div className="absolute inset-0 bg-[#0a0a0a]/40 pointer-events-none"></div>
       
-      {/* Mock Map Pin */}
+      
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
         <div className="w-12 h-12 bg-[#35E58D] rounded-full flex items-center justify-center text-[#0a0a0a] shadow-[0_0_30px_rgba(53,229,141,0.6)] animate-pulse">
           <MapPin size={24} className="fill-current" />
@@ -183,7 +183,7 @@ const LocationAndSocials = () => (
   </section>
 );
 
-// --- Main Page Assembly ---
+
 
 const ContactUsPage = () => {
   return (

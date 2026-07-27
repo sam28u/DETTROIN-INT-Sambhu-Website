@@ -26,21 +26,21 @@ const FutureProofPedagogy = () => {
     <section className="w-full bg-[#121614] py-20 px-6 lg:px-12 font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-center">
         
-        {/* --- Left Column: Image & Floating Card --- */}
+        
         <div className="relative w-full max-w-xl mx-auto lg:max-w-none lg:mx-0">
           
-          {/* Main Image Container */}
+          
           <div className="relative h-[350px] sm:h-[450px] lg:h-[500px] w-full lg:w-[90%] rounded-3xl overflow-hidden shadow-2xl border border-[#232e27]">
             <img 
               src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?q=80&w=1000&auto=format&fit=crop" 
               alt="Future-Proof Learning" 
               className="w-full h-full object-cover object-center"
             />
-            {/* Subtle Gradient Overlay */}
+            
             <div className="absolute inset-0 bg-gradient-to-t from-[#121614]/80 via-transparent to-transparent pointer-events-none"></div>
           </div>
 
-          {/* Floating Glassmorphic Card (Probing Inquiry) */}
+          
           <div className="absolute -bottom-6 right-0 lg:-right-4 w-[85%] sm:w-[70%] bg-[#181f1b]/85 backdrop-blur-xl border border-[#26332b] rounded-2xl p-6 sm:p-8 shadow-[0_20px_40px_rgba(0,0,0,0.6)] z-20">
             <div className="flex items-center gap-3 mb-3">
               <Lightbulb size={20} className="text-[#cbf5d7]" />
@@ -55,25 +55,25 @@ const FutureProofPedagogy = () => {
 
         </div>
 
-        {/* --- Right Column: Content Section --- */}
+        
         <div className="flex flex-col justify-center pt-8 lg:pt-0">
           
-          {/* Heading */}
+          
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-12 tracking-tight">
             Future-Proof <span className="text-[#84b99e]">Pedagogy</span>
           </h2>
 
-          {/* Pedagogy List */}
+          
           <div className="flex flex-col gap-8 mb-10">
             {pedagogyItems.map((item, index) => (
               <div key={index} className="flex items-start gap-5 group">
                 
-                {/* Icon Wrapper */}
+                
                 <div className="shrink-0 w-12 h-12 rounded-full border border-[#232e27] bg-[#151a17] flex items-center justify-center transition-colors duration-300 group-hover:border-[#84b99e]/50 group-hover:bg-[#1a231d]">
                   {item.icon}
                 </div>
                 
-                {/* Text Content */}
+                
                 <div>
                   <h3 className="text-white text-lg font-semibold mb-2">
                     {item.title}
@@ -87,9 +87,9 @@ const FutureProofPedagogy = () => {
             ))}
           </div>
 
-          {/* Quote Block */}
+          
           <div className="relative bg-[#181f1b] border border-[#232e27] rounded-2xl p-8 overflow-hidden group">
-            {/* Background Quote Icon */}
+            
             <Quote 
               size={120} 
               className="absolute -top-6 -right-6 text-[#232e27]/40 rotate-12 transition-transform duration-500 group-hover:scale-110" 
