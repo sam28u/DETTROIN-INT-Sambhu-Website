@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Excellence International School Portal
 
-## Getting Started
+A high-performance, modern, and immersive single-page application and multi-page frontend experience built for Excellence International School. Featuring a futuristic **Glassmorphism & High-Contrast Neon** design system, fully responsive layouts, smooth animations via Framer Motion, and a rich ecosystem of components.
 
-First, run the development server:
+## Developer Information
+* **Full Name**: SAMBHU PRASAD VERMA
+* **Email Address**: sambhufirst11@gmail.com
+* **GitHub Username**: sam28u
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Project Details
+* **Selected Website**: Excellence International School Frontend / Portal
+* **Live Demo Link**: [Live Url](https://dettroin-int-sambhu-website-noho.vercel.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
+* **Framework**: Next.js (App Router) / React
+* **Styling**: Tailwind CSS (with custom utility classes and container queries)
+* **Icons**: Lucide React
+* **Animation**: Framer Motion
+* **Typography**: Plus Jakarta Sans (Google Fonts)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Key Improvements Made
+1. **Unified Design System**: Developed a comprehensive dark-mode aesthetic utilizing deep charcoal backgrounds (`#0a0a0a`), frosted glass panels (`backdrop-filter: blur`), and glowing neon accents (`#35E58D` Mint & `#4ac1e0` Cyan).
+2. **Dynamic Navigation & Footer**: Built a sticky glassmorphic navbar with active route underlines and mobile drawer animations, backed by a content-rich, responsive footer standard across all pages.
+3. **Interactive Components**: 
+   - Filterable masonry photo galleries.
+   - Cinematic video tour modals and interactive stats grid blocks.
+   - Fully accessible contact forms and newsletter subscription widgets with focused state neon glows.
+4. **Comprehensive Sub-Pages**: Designed fully realized, theme-matched sub-pages including a News & Events feed, individual Blog Article reading layouts with comment sections, and a dedicated Contact Us hub with mock mapping features.
+5. **Performance & Motion**: Integrated `framer-motion` page transitions and scroll-triggered `MotionWrapper` components to ensure a fluid, high-octane user experience.
